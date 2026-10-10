@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Contrôle de la semaine · 5/10 au 11/10</title>
+<style>
+:root{--bg:#f4f1ea;--card:#fff;--ink:#1c1c1c;--mut:#6b6b6b;--line:#ddd8cc;--gold:#b8901c;--ok:#1f6f54;--okbg:#e6f3ee;--ko:#a12a2a;--kobg:#f8e9e9;--mid:#8a5a00;--midbg:#f8f0df}
+@media(prefers-color-scheme:dark){:root{--bg:#141412;--card:#1e1e1b;--ink:#ecebe6;--mut:#a3a199;--line:#3a3934;--gold:#d8b24a;--ok:#6fd0ab;--okbg:#173229;--ko:#f09a9a;--kobg:#3a1d1d;--mid:#e3bd6c;--midbg:#3a2f17}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 Georgia,'Times New Roman',serif}
+main{max-width:680px;margin:0 auto;padding:20px 16px 60px}
+.card{background:var(--card);border-radius:14px;padding:22px 20px;border:1px solid var(--line)}
+.k{font:600 12px Arial,sans-serif;letter-spacing:1.1px;text-transform:uppercase;color:var(--gold);margin:0 0 8px}
+h1{font-size:26px;line-height:1.2;margin:0 0 10px}.q{font-size:19px;margin:0 0 18px;white-space:pre-line}
+.s{font:14px/1.5 Arial,sans-serif;color:var(--mut)}
+.bar{height:6px;background:var(--line);border-radius:3px;margin:0 0 18px;overflow:hidden}.bar i{display:block;height:100%;background:var(--gold)}
+button{font:600 16px Arial,sans-serif;border-radius:10px;cursor:pointer}
+.opt{display:block;width:100%;text-align:left;background:var(--card);color:var(--ink);border:1.5px solid var(--line);padding:13px 14px;margin:0 0 10px;font-weight:400;font-family:Georgia,serif;font-size:16.5px;line-height:1.4}
+.opt b{font-family:Arial,sans-serif;margin-right:8px}.opt.sel{border-color:var(--gold);box-shadow:inset 0 0 0 1px var(--gold)}
+.opt.good{border-color:var(--ok);background:var(--okbg)}.opt.bad{border-color:var(--ko);background:var(--kobg)}
+.go{background:var(--ink);color:var(--bg);border:0;padding:14px 20px;width:100%;margin-top:6px}.go:disabled{opacity:.35;cursor:default}
+textarea{width:100%;min-height:110px;font:16px/1.45 Georgia,serif;padding:12px;border-radius:10px;border:1.5px solid var(--line);background:var(--card);color:var(--ink)}
+.fb{border-radius:12px;padding:14px 16px;margin:16px 0 4px}.fb.ok{background:var(--okbg)}.fb.ko{background:var(--kobg)}.fb.mid{background:var(--midbg)}
+.fb h3{font:700 16px Arial,sans-serif;margin:0 0 8px}.fb.ok h3{color:var(--ok)}.fb.ko h3{color:var(--ko)}.fb.mid h3{color:var(--mid)}
+.fb p{margin:0 0 8px;font-size:16px}.fb p:last-child{margin:0}.lab{font:700 12.5px Arial,sans-serif;text-transform:uppercase;letter-spacing:.5px;color:var(--mut);display:block;margin-bottom:2px}
+.row{display:flex;gap:8px;flex-wrap:wrap}.row button{flex:1;min-width:120px;padding:12px;border:1.5px solid var(--line);background:var(--card);color:var(--ink)}
+.score{font:700 64px Georgia,serif;margin:6px 0 0}.score small{font-size:26px;color:var(--mut)}
+.miss{border-left:3px solid var(--ko);padding:2px 0 2px 14px;margin:18px 0}.miss.mid{border-color:var(--mid)}
+ul{padding-left:20px;margin:8px 0}li{margin-bottom:6px}
+</style></head><body><main id="app"></main>
+<script>const QUIZ = {"week": "2026-W41", "title": "Semaine du 5/10 au 11/10", "total": 20, "lessons": 5, "questions": [{"n": 1, "type": "mcq", "question": "Lippmann calls the formula \"self-interest determines opinion\" true but not illuminating. Why?", "options": ["Because most people do not actually know what their interests are.", "Because a person is not one fixed character: you first need to know which self the message engages.", "Because opinion is shaped by the press far more than by interest.", "Because interests change too slowly to explain sudden shifts of opinion."], "answer": "B", "explanation": "For Lippmann there is no one self always at work. The same person is a calm calculator about distant acres and an outraged head of family about a humiliation. Saying interest decides explains nothing until you know which self selects that interest. A is tempting, but he never says people ignore their interests.", "points": 1.5, "lessons": [{"title": "No two people hear the same message", "author": "Walter Lippmann", "book": "Public Opinion", "when": "7/10 au soir"}]}, {"n": 2, "type": "mcq", "question": "According to Hormozi, what does a larger one-time startup fee do to a recurring service?", "options": ["It improves lead quality but raises churn, because clients feel overcharged.", "It lowers churn: a higher barrier to get in is also a higher barrier to walk away.", "It only offsets acquisition cost and has no effect on how long clients stay.", "It works for fixed-length programs but backfires on monthly subscriptions."], "answer": "B", "explanation": "His rule is that the bigger the entry cost, the lower the churn. The tanning members who paid $100 to join a $10 plan almost never left. C is half true (he does say the fee offsets acquisition cost) but the point of the passage is retention. D is false: he says it works with recurring and defined-end offers alike.", "points": 1.5, "lessons": [{"title": "A setup fee is an onboarding tool: why upfront commitment keeps clients doing the work", "author": "Alex Hormozi", "book": "$100M Lost Chapters", "when": "8/10 au matin"}]}, {"n": 3, "type": "truefalse", "question": "In Hormozi's setup-fee play, a client who cancels and later comes back gets the fee waived as a goodwill gesture.", "options": [], "answer": false, "explanation": "The opposite: a client who leaves and returns pays the fee again. That is part of what makes leaving costly. Waiving the fee is something he reserves for the first sale, to create goodwill or help a hesitant buyer decide.", "points": 1.5, "lessons": [{"title": "A setup fee is an onboarding tool: why upfront commitment keeps clients doing the work", "author": "Alex Hormozi", "book": "$100M Lost Chapters", "when": "8/10 au matin"}]}, {"n": 4, "type": "multi", "question": "Hormozi says the fee matters most when the client has to act for the result to happen. Which of these client actions does he actually list?", "options": ["Sending you information", "Filling out forms", "Showing up at set times", "Referring friends", "Changing a behaviour", "Leaving a review"], "answer": ["A", "B", "C", "E"], "explanation": "His list is: getting you information, filling out forms, showing up at certain times, making selections, changing behaviour. Referrals and reviews belong to another lesson of the week (what you collect after delivery), not to the reasons for charging a startup fee.", "points": 2.0, "lessons": [{"title": "A setup fee is an onboarding tool: why upfront commitment keeps clients doing the work", "author": "Alex Hormozi", "book": "$100M Lost Chapters", "when": "8/10 au matin"}]}, {"n": 5, "type": "mcq", "question": "In what order does Hormozi say to build a Money Model?", "options": ["Attraction offer, then upsell, then downsell, then continuity.", "Attraction offer, then continuity, then upsell, then downsell.", "Continuity first to secure recurring cash, then attraction, then upsell.", "All four at once, so the offers support each other from day one."], "answer": "A", "explanation": "Start with the offer that brings clients in. Once it produces clients and cash, add an upsell, then a downsell to catch the people who said no, and the recurring offer last. D is the mistake he warns about: installing everything at once breaks the business.", "points": 1.5, "lessons": [{"title": "Do you need more products, or more ways to offer the one you have?", "author": "Alex Hormozi", "book": "$100M Money Models", "when": "9/10 au matin"}]}, {"n": 6, "type": "open", "question": "How does Hormozi say to find the right price for a new offer? Give the steps.", "options": [], "answer": "Launch it low enough to get a lot of yeses. Use what those customers tell you to improve the product. Then raise the price step by step, and stop when you stop making more money.", "explanation": "The low price is not the goal, it is a way to get volume and feedback fast. The stopping rule is total revenue, not the number of buyers: you keep raising until revenue no longer grows.", "points": 2.0, "lessons": [{"title": "Do you need more products, or more ways to offer the one you have?", "author": "Alex Hormozi", "book": "$100M Money Models", "when": "9/10 au matin"}]}, {"n": 7, "type": "mcq", "question": "When a young business tests price to find its optimal selling strategy, which way does Masterson lean, and why?", "options": ["High, because a premium price signals quality to the core market.", "Low, because the early goal is volume: reaching a critical mass of qualified customers fast.", "Low, because long-term profit comes from selling cheap products in large numbers.", "In the middle, to avoid drawing wrong conclusions from either extreme."], "answer": "B", "explanation": "He says to favour the downside at the start, to reach a critical mass of qualified customers as soon as possible. C has the right direction and the wrong reason: for him long-term profit comes later, from higher-priced products sold to the best and most loyal customers.", "points": 1.5, "lessons": [{"title": "The optimal selling strategy: Masterson's model for winning new customers first", "author": "Michael Masterson", "book": "Ready, Fire, Aim", "when": "9/10 au soir"}]}, {"n": 8, "type": "multi", "question": "\"Get the selling part right before you build or perfect the product.\" Which ways of testing demand first does Masterson give?", "options": ["Sell the product before it is produced.", "Sell a similar existing product under your own selling proposition.", "Run the campaign with no product, then refund every buyer.", "Survey your audience about what they would be willing to pay.", "Produce a small first batch and see how fast it sells."], "answer": ["A", "B", "C"], "explanation": "All three of his methods involve a real sale: selling in advance, selling a similar product with your proposition attached, or a dry test with full refunds. A survey measures intentions, not purchases, and he never mentions it. A small batch is exactly the inventory he tells you not to invest in before the selling strategy is known.", "points": 2.0, "lessons": [{"title": "The optimal selling strategy: Masterson's model for winning new customers first", "author": "Michael Masterson", "book": "Ready, Fire, Aim", "when": "9/10 au soir"}]}, {"n": 9, "type": "truefalse", "question": "Masterson says that once you have found your optimal selling strategy, it keeps working as long as product quality stays high.", "options": [], "answer": false, "explanation": "He says the opposite: even the best products and selling strategies do not last forever, and what takes a business through one stage does not fully fit the next. The signs of refusing to adapt are slowing sales, rising refunds and good people leaving.", "points": 1.5, "lessons": [{"title": "The optimal selling strategy: Masterson's model for winning new customers first", "author": "Michael Masterson", "book": "Ready, Fire, Aim", "when": "9/10 au soir"}]}, {"n": 10, "type": "mcq", "question": "A company in Hormozi's portfolio moved from group onboarding to one-to-one onboarding. What result does he report?", "options": ["Churn fell by 25 percent in the first month.", "Upgrades to higher offers rose by 25 percent.", "The cost to acquire a customer fell by 25 percent.", "Referrals from new customers rose by 25 percent."], "answer": "B", "explanation": "The figure is a 25 percent boost in ascensions, meaning customers moving up to higher offers. The higher customer value then allowed more ad spend, which he counts among the main reasons revenue went from $2M a month to $2M a week. A is the tempting answer because the playbook is about churn, but that is not the number he gives.", "points": 1.5, "lessons": [{"title": "Onboard to activation, then reward it: two steps of Hormozi's churn checklist", "author": "Alex Hormozi", "book": "$100M Retention Playbook", "when": "10/10 au matin"}]}, {"n": 11, "type": "mcq", "question": "A client paid a large startup fee for a yearly service. In month two they stop using it but keep paying. Putting the two Hormozi lessons together, which reading is right?", "options": ["No action needed: the upfront fee already secures the client for the year.", "This is usage churn, an early warning. Reach them now and get them active again; the fee created commitment but does not replace activation.", "Offer a discount on the next months to compensate for the lack of use.", "Wait for the renewal date, when the client will have to decide anyway."], "answer": "B", "explanation": "Usage churn is a client still subscribed who no longer uses the product, and Hormozi treats it as a leading indicator: intercept them right when the usage stops. The startup fee raises commitment, but his own conclusion is that the more a customer uses the product, the longer they stay. Paying is not using.", "points": 2.0, "lessons": [{"title": "A setup fee is an onboarding tool: why upfront commitment keeps clients doing the work", "author": "Alex Hormozi", "book": "$100M Lost Chapters", "when": "8/10 au matin"}, {"title": "Onboard to activation, then reward it: two steps of Hormozi's churn checklist", "author": "Alex Hormozi", "book": "$100M Retention Playbook", "when": "10/10 au matin"}]}, {"n": 12, "type": "open", "question": "Masterson and Hormozi both tell you to start a new offer at a low price. What is each one's reason, and what does each do next?", "options": [], "answer": "Masterson: low price for volume, to reach a critical mass of qualified customers quickly; profit comes later from higher-priced products sold to the best customers. Hormozi: low price to get many yeses and feedback to improve the offer; then raise the price until revenue stops growing.", "explanation": "Same starting move, two different logics. Masterson is buying customers and knowledge of how to sell; his upside is the back end. Hormozi is buying feedback; his upside is the same offer at a higher price.", "points": 1.5, "lessons": [{"title": "Do you need more products, or more ways to offer the one you have?", "author": "Alex Hormozi", "book": "$100M Money Models", "when": "9/10 au matin"}, {"title": "The optimal selling strategy: Masterson's model for winning new customers first", "author": "Michael Masterson", "book": "Ready, Fire, Aim", "when": "9/10 au soir"}]}]};</script>
+<script>
+(function(){
+var app=document.getElementById('app'),Q=QUIZ.questions,i=-1,log=[];
+var L='ABCDEFGH',TYPE={mcq:'Une seule bonne réponse',multi:'Plusieurs bonnes réponses',truefalse:'Vrai ou faux',open:'Réponse libre'};
+function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
+function pts(p){return (''+p).replace('.',',')+(p>1?' points':' point')}
+function lab(parent,title,text){var p=el('p');p.appendChild(el('span','lab',title));p.appendChild(document.createTextNode(text));parent.appendChild(p)}
+function lessonText(l){return '« '+l.title+' » · '+l.author+', '+l.book+' · reçue le '+l.when}
+function expected(q){
+  if(q.type==='mcq')return q.answer+'. '+q.options[L.indexOf(q.answer)];
+  if(q.type==='multi')return q.answer.map(function(a){return a+'. '+q.options[L.indexOf(a)]}).join('  ·  ');
+  if(q.type==='truefalse')return q.answer?'Vrai':'Faux';
+  return q.answer}
+function start(){
+  app.innerHTML='';var c=el('div','card');c.appendChild(el('p','k','Contrôle hebdomadaire'));c.appendChild(el('h1',null,QUIZ.title));
+  c.appendChild(el('p',null,Q.length+' questions sur les '+QUIZ.lessons+' leçons de la semaine. Note sur '+QUIZ.total+'.'));
+  c.appendChild(el('p','s','Réponds de mémoire, sans rouvrir les leçons. Chaque réponse est corrigée tout de suite : juste ou faux, la bonne réponse, et pourquoi.'));
+  var b=el('button','go','Commencer');b.onclick=next;c.appendChild(b);app.appendChild(c)}
+function next(){i++;if(i>=Q.length)return end();show(Q[i])}
+function show(q){
+  app.innerHTML='';window.scrollTo(0,0);var c=el('div','card');
+  var bar=el('div','bar'),f=el('i');f.style.width=(100*i/Q.length)+'%';bar.appendChild(f);c.appendChild(bar);
+  c.appendChild(el('p','k','Question '+(i+1)+' sur '+Q.length+' · '+TYPE[q.type]+' · '+pts(q.points)));
+  c.appendChild(el('p','q',q.question));
+  var box=el('div');c.appendChild(box);var go=el('button','go','Valider');go.disabled=true;var picked=[];
+  if(q.type==='open'){
+    var ta=el('textarea');ta.placeholder='Écris ta réponse en une ou deux phrases, puis compare.';box.appendChild(ta);
+    go.textContent='Voir la réponse';go.disabled=false;
+    go.onclick=function(){ta.disabled=true;go.remove();openFb(c,q,ta.value)};
+  }else{
+    var opts=q.type==='truefalse'?['Vrai','Faux']:q.options;
+    opts.forEach(function(o,k){
+      var key=q.type==='truefalse'?(k===0):L[k];var b=el('button','opt');
+      if(q.type!=='truefalse'){b.appendChild(el('b',null,L[k]+'.'))}b.appendChild(document.createTextNode(o));b.dataset.k=''+key;
+      b.onclick=function(){
+        if(q.type==='multi'){var p=picked.indexOf(key);if(p<0)picked.push(key);else picked.splice(p,1);b.classList.toggle('sel')}
+        else{picked=[key];[].forEach.call(box.children,function(x){x.classList.remove('sel')});b.classList.add('sel')}
+        go.disabled=picked.length===0};
+      box.appendChild(b)});
+    go.onclick=function(){
+      var good=q.type==='multi'?q.answer:[q.answer];
+      var ok=picked.length===good.length&&picked.every(function(p){return good.indexOf(p)>=0});
+      [].forEach.call(box.children,function(x){x.disabled=true;var k=q.type==='truefalse'?(x.dataset.k==='true'):x.dataset.k;
+        if(good.indexOf(k)>=0)x.classList.add('good');else if(picked.indexOf(k)>=0)x.classList.add('bad')});
+      go.remove();
+      var given=q.type==='truefalse'?(picked[0]?'Vrai':'Faux'):picked.slice().sort().join(', ');
+      feedback(c,q,ok?q.points:0,given)}}
+  c.appendChild(go);app.appendChild(c)}
+function openFb(c,q,given){
+  var fb=el('div','fb mid');fb.appendChild(el('h3',null,'Compare avec la réponse attendue'));
+  lab(fb,'Réponse attendue',q.answer);lab(fb,'Pourquoi',q.explanation);c.appendChild(fb);
+  c.appendChild(el('p','s','Sois honnête avec toi-même : ta réponse contenait-elle l\'idée ?'));
+  var row=el('div','row');[['Oui, tout',1],['En partie',.5],['Non',0]].forEach(function(o){
+    var b=el('button',null,o[0]);b.onclick=function(){row.remove();log.push({q:q,got:q.points*o[1],given:given||'(vide)'});nextBtn(c,q,o[1]<1)};row.appendChild(b)});
+  c.appendChild(row);row.scrollIntoView({behavior:'smooth',block:'center'})}
+function feedback(c,q,got,given){
+  log.push({q:q,got:got,given:given});var ok=got>=q.points;
+  var fb=el('div','fb '+(ok?'ok':'ko'));fb.appendChild(el('h3',null,ok?'Juste · +'+pts(q.points):'Faux · 0 point'));
+  if(!ok)lab(fb,'Bonne réponse',expected(q));lab(fb,'Pourquoi',q.explanation);
+  c.appendChild(fb);nextBtn(c,q,!ok);fb.scrollIntoView({behavior:'smooth',block:'center'})}
+function nextBtn(c,q,showLesson){
+  if(showLesson){var p=el('p','s');p.appendChild(el('span','lab','À relire'));p.appendChild(document.createTextNode(q.lessons.map(lessonText).join('  |  ')));c.appendChild(p)}
+  var b=el('button','go',i+1<Q.length?'Question suivante':'Voir ma note');b.onclick=next;c.appendChild(b)}
+function end(){
+  app.innerHTML='';window.scrollTo(0,0);var c=el('div','card');
+  var total=log.reduce(function(s,r){return s+r.got},0);total=Math.round(total*2)/2;
+  var right=log.filter(function(r){return r.got>=r.q.points}).length,missed=log.filter(function(r){return r.got<r.q.points});
+  c.appendChild(el('p','k','Ta note de la semaine'));var s=el('p','score',(''+total).replace('.',','));s.appendChild(el('small',null,' / '+QUIZ.total));c.appendChild(s);
+  c.appendChild(el('p',null,right+' réponses justes sur '+Q.length+'.'+(missed.length?'':' Rien à revoir cette semaine.')));
+  if(missed.length){
+    var seen={},ul=el('ul');missed.forEach(function(r){r.q.lessons.forEach(function(l){if(!seen[l.title]){seen[l.title]=1;ul.appendChild(el('li',null,lessonText(l)))}})});
+    c.appendChild(el('p','k','À revoir'));c.appendChild(ul);
+    c.appendChild(el('p','k','Ce que tu as manqué'));
+    missed.forEach(function(r){var d=el('div','miss'+(r.got>0?' mid':''));d.appendChild(el('p',null,'Question '+r.q.n+' · '+r.q.question));
+      lab(d,'Ta réponse',r.given);lab(d,'Ce qu\'il fallait répondre',expected(r.q));lab(d,'Pourquoi',r.q.explanation);c.appendChild(d)})}
+  try{localStorage.setItem('quiz_'+QUIZ.week,JSON.stringify({score:total,date:new Date().toISOString()}))}catch(e){}
+  var b=el('button','go','Recommencer');b.onclick=function(){i=-1;log=[];start()};c.appendChild(b);app.appendChild(c)}
+start();
+})();
+</script></body></html>
