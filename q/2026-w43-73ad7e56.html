@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Contrôle de la semaine · 19/10 au 25/10</title>
+<style>
+:root{--bg:#f4f1ea;--card:#fff;--ink:#1c1c1c;--mut:#6b6b6b;--line:#ddd8cc;--gold:#b8901c;--ok:#1f6f54;--okbg:#e6f3ee;--ko:#a12a2a;--kobg:#f8e9e9;--mid:#8a5a00;--midbg:#f8f0df}
+@media(prefers-color-scheme:dark){:root{--bg:#141412;--card:#1e1e1b;--ink:#ecebe6;--mut:#a3a199;--line:#3a3934;--gold:#d8b24a;--ok:#6fd0ab;--okbg:#173229;--ko:#f09a9a;--kobg:#3a1d1d;--mid:#e3bd6c;--midbg:#3a2f17}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 Georgia,'Times New Roman',serif}
+main{max-width:680px;margin:0 auto;padding:20px 16px 60px}
+.card{background:var(--card);border-radius:14px;padding:22px 20px;border:1px solid var(--line)}
+.k{font:600 12px Arial,sans-serif;letter-spacing:1.1px;text-transform:uppercase;color:var(--gold);margin:0 0 8px}
+h1{font-size:26px;line-height:1.2;margin:0 0 10px}.q{font-size:19px;margin:0 0 18px;white-space:pre-line}
+.s{font:14px/1.5 Arial,sans-serif;color:var(--mut)}
+.bar{height:6px;background:var(--line);border-radius:3px;margin:0 0 18px;overflow:hidden}.bar i{display:block;height:100%;background:var(--gold)}
+button{font:600 16px Arial,sans-serif;border-radius:10px;cursor:pointer}
+.opt{display:block;width:100%;text-align:left;background:var(--card);color:var(--ink);border:1.5px solid var(--line);padding:13px 14px;margin:0 0 10px;font-weight:400;font-family:Georgia,serif;font-size:16.5px;line-height:1.4}
+.opt b{font-family:Arial,sans-serif;margin-right:8px}.opt.sel{border-color:var(--gold);box-shadow:inset 0 0 0 1px var(--gold)}
+.opt.good{border-color:var(--ok);background:var(--okbg)}.opt.bad{border-color:var(--ko);background:var(--kobg)}
+.go{background:var(--ink);color:var(--bg);border:0;padding:14px 20px;width:100%;margin-top:6px}.go:disabled{opacity:.35;cursor:default}
+textarea{width:100%;min-height:110px;font:16px/1.45 Georgia,serif;padding:12px;border-radius:10px;border:1.5px solid var(--line);background:var(--card);color:var(--ink)}
+.fb{border-radius:12px;padding:14px 16px;margin:16px 0 4px}.fb.ok{background:var(--okbg)}.fb.ko{background:var(--kobg)}.fb.mid{background:var(--midbg)}
+.fb h3{font:700 16px Arial,sans-serif;margin:0 0 8px}.fb.ok h3{color:var(--ok)}.fb.ko h3{color:var(--ko)}.fb.mid h3{color:var(--mid)}
+.fb p{margin:0 0 8px;font-size:16px}.fb p:last-child{margin:0}.lab{font:700 12.5px Arial,sans-serif;text-transform:uppercase;letter-spacing:.5px;color:var(--mut);display:block;margin-bottom:2px}
+.row{display:flex;gap:8px;flex-wrap:wrap}.row button{flex:1;min-width:120px;padding:12px;border:1.5px solid var(--line);background:var(--card);color:var(--ink)}
+.score{font:700 64px Georgia,serif;margin:6px 0 0}.score small{font-size:26px;color:var(--mut)}
+.miss{border-left:3px solid var(--ko);padding:2px 0 2px 14px;margin:18px 0}.miss.mid{border-color:var(--mid)}
+ul{padding-left:20px;margin:8px 0}li{margin-bottom:6px}
+</style></head><body><main id="app"></main>
+<script>const QUIZ = {"week": "2026-W43", "title": "Semaine du 19/10 au 25/10", "total": 20, "lessons": 12, "questions": [{"n": 1, "type": "mcq", "question": "In Hormozi's testimonial contest, how is the winner chosen?", "options": ["The submission the customers themselves vote best.", "The submission that converts best as an ad over thirty days.", "The most-viewed submission in the first week after the announcement.", "The submission with the most polished production."], "answer": "B", "explanation": "Each submission is turned into an ad, and the one with the most conversions over 30 days wins. The criterion is performance, not taste or popularity, and he asks for raw, phone-filmed videos precisely because the rawer the better.", "points": 1.5, "lessons": [{"title": "Three ideas on customer-generated ads: the competition, the weekly checklist, the order to build it", "author": "Alex Hormozi", "book": "$100M Marketing Machine", "when": "19/10 au matin"}]}, {"n": 2, "type": "mcq", "question": "After Bruce Lee's sudden death in 1973, what did Dennis do that turned luck into an advantage?", "options": ["He started writing the biography straight away, since it was not yet begun.", "He sent Atyeo to Hong Kong at once, on a loan from the publisher, before Lee's film company closed ranks.", "He obtained an exclusive interview with Raymond Chow for the book.", "He sold the American rights to Rolling Stone's book arm before the manuscript was done."], "answer": "B", "explanation": "The book was already nearly finished, and Dennis acted immediately: Atyeo flew out on borrowed money and reconstructed the night of the death, then left before the door shut. The luck was the death; the head start was not luck.", "points": 1.5, "lessons": [{"title": "Good timing, and the luck you help make: Felix Dennis and the Bruce Lee biography", "author": "Felix Dennis", "book": "How to Get Rich", "when": "23/10 au matin"}]}, {"n": 3, "type": "truefalse", "question": "The .97 correlation between media attention and the voters' ranking of issues is, by itself, what shows that coverage causes importance.", "options": [], "answer": false, "explanation": "A correlation does not give a direction. Cialdini therefore adds the Iyengar, Peters and Kinder experiment, where people randomly assigned to different news shows rated their own show's topics as more important afterwards.", "points": 1.5, "lessons": [{"title": "Attention creates importance: the evidence behind Cialdini's focusing claim", "author": "Robert Cialdini", "book": "Pre-Suasion", "when": "20/10 au matin"}]}, {"n": 4, "type": "multi", "question": "Which of these does Brunson list as ways of directly raising the perceived worth of the offer itself?", "options": ["Selling a new opportunity instead of an improvement.", "Building proprietary frameworks nobody else has.", "Creating a category of your own to lead.", "Writing a sharper hook that catches the right customer's attention.", "Lowering the price below competitors."], "answer": ["A", "B", "C"], "explanation": "The first three are in his list, along with packaging, cause, tribe and identity. The hook is a separate part of Hook, Story, Offer: it catches attention, while the story raises worth. Lowering the price shrinks the gap in the wrong way and is not part of his list.", "points": 2.0, "lessons": [{"title": "Perceived value must exceed price, and story is what lifts it", "author": "Russell Brunson", "book": "Expert Secrets", "when": "20/10 au soir"}]}, {"n": 5, "type": "mcq", "question": "Brunson gives the application form two jobs. Which one does he rank higher?", "options": ["Telling the sales team where the applicant's business stands today.", "Pre-framing: the applicant convinces himself and unready people drop out.", "Collecting a deposit before the call.", "Replacing the video sales letter."], "answer": "B", "explanation": "Information for the sales team is the lesser job. The pre-frame matters more because writing out his reasons makes the applicant start selling himself, and calls then go only to people who are ready.", "points": 1.5, "lessons": [{"title": "Make the prospect apply before anyone picks up the phone", "author": "Russell Brunson", "book": "DotCom Secrets", "when": "21/10 au matin"}]}, {"n": 6, "type": "multi", "question": "Which steps belong to Hormozi's way of finding the activation point?", "options": ["Start from the customers who paid the most and stayed the longest.", "Compare what they did and how you treated them with the customers who left.", "Cut the list of shared factors to five and test them one after another.", "Test all the candidate factors at the same time to save months.", "Start from the complaints of the customers who left and fix them first."], "answer": ["A", "B", "C"], "explanation": "He starts from the best customers, looks at what they share that the leavers lacked, and tests a shortlist of five in sequence, because only some will matter. Testing everything at once blurs which factor works, and he does not start from the leavers' complaints.", "points": 2.0, "lessons": [{"title": "Find the activation point, then build onboarding that drives customers to it", "author": "Alex Hormozi", "book": "$100M Retention Playbook", "when": "21/10 au soir"}]}, {"n": 7, "type": "mcq", "question": "Which guarantee holds back the client's second payment until a first result arrives, and fits best when you know the metric that predicts long-term retention?", "options": ["Wage payment.", "Delayed second payment.", "First outcome guarantee.", "Release of service."], "answer": "B", "explanation": "The delayed second payment stops billing until the first result. The first outcome guarantee is the tempting one: it also waits for the first result, but there the seller keeps paying an ancillary expense such as ad spend rather than delaying the client's bill.", "points": 1.5, "lessons": [{"title": "A guarantee is a statement about who carries the risk until the first result", "author": "Alex Hormozi", "book": "$100M Offers", "when": "22/10 au matin"}]}, {"n": 8, "type": "truefalse", "question": "For the anchor upsell to work, the premium offer should differ from the main offer in its primary features.", "options": [], "answer": false, "explanation": "Hormozi keeps the primary features identical and changes only secondary ones, which fewer people care about. Most buyers want a suit; a few want a fancy one. That is what makes the main offer look like a bargain.", "points": 1.5, "lessons": [{"title": "Show the expensive version first: the anchor upsell", "author": "Alex Hormozi", "book": "$100M Money Models", "when": "22/10 au soir"}]}, {"n": 9, "type": "mcq", "question": "In the seven-day campaign, a strong offer should sell out by day three or four. If it has not, what does Hormozi advise?", "options": ["Extend the campaign to two weeks.", "Send more texts to the same leads.", "Improve the offer before sending the rest.", "Drop the deadline and keep the offer open."], "answer": "C", "explanation": "Slow selling is read as a sign that the offer is weak, so he fixes the offer before sending it to the remaining leads. A longer window would dilute urgency, which is exactly why he limits the campaign to one week.", "points": 1.5, "lessons": [{"title": "A clear offer plus a deadline: Hormozi's seven-day closing campaign", "author": "Alex Hormozi", "book": "$100M Fast Cash Playbook", "when": "23/10 au soir"}]}, {"n": 10, "type": "truefalse", "question": "Hormozi's refund guarantee for weight-loss programs promised that the client would reach their target result.", "options": [], "answer": false, "explanation": "He could not eat the food for the client, so he guaranteed a level of service worth what they paid, with a check the day the client said he had failed to deliver it. He guaranteed the service, not the result.", "points": 1.5, "lessons": [{"title": "The riskiest guarantee is the one Hormozi closed with", "author": "Alex Hormozi", "book": "$100M Offers", "when": "24/10 au matin"}]}, {"n": 11, "type": "mcq", "question": "A prospect says your main package is not worth its price. Using both Brunson and Hormozi, which move is most consistent with them?", "options": ["Lower the price until it sits below what they say it is worth.", "Hide the price until the end of the conversation.", "Show a real, far pricier premium version first, and tell the story behind the offer before presenting the main one.", "Add more secondary features to the main offer and keep the price."], "answer": "C", "explanation": "Both lessons act on the gap between perceived worth and price. Hormozi's anchor makes the main offer look like a bargain next to a premium five to ten times higher, and Brunson's story preframes the offer so its worth is seen as higher. Cutting the price closes the gap the wrong way.", "points": 2.0, "lessons": [{"title": "Perceived value must exceed price, and story is what lifts it", "author": "Russell Brunson", "book": "Expert Secrets", "when": "20/10 au soir"}, {"title": "Show the expensive version first: the anchor upsell", "author": "Alex Hormozi", "book": "$100M Money Models", "when": "22/10 au soir"}]}, {"n": 12, "type": "open", "question": "You will run a one-week offer to your leads and have three good things to say about it. Using the Heath brothers and Hormozi's seven-day campaign, how do you build the announcement and the week?", "options": [], "answer": "One lead only: the offer with its deadline, chosen as in the telegraph test, then the rest in descending order of importance. The week: text for attention, email for detail; a question text the day before; calls booked right away; the sequence from announcement to sold out. Do not use a second lead.", "explanation": "Heath: write the lead first, refuse a second one, and rank the rest. Hormozi: a clear offer with a deadline, text plus email, a week-long sequence, and calls before the cut-off. The two fit: the lead is the offer plus its date.", "points": 2.0, "lessons": [{"title": "Write the lead first: how to stop burying your main point", "author": "Chip Heath & Dan Heath", "book": "Made to Stick", "when": "24/10 au soir"}, {"title": "A clear offer plus a deadline: Hormozi's seven-day closing campaign", "author": "Alex Hormozi", "book": "$100M Fast Cash Playbook", "when": "23/10 au soir"}]}]};</script>
+<script>
+(function(){
+var app=document.getElementById('app'),Q=QUIZ.questions,i=-1,log=[];
+var L='ABCDEFGH',TYPE={mcq:'Une seule bonne réponse',multi:'Plusieurs bonnes réponses',truefalse:'Vrai ou faux',open:'Réponse libre'};
+function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
+function pts(p){return (''+p).replace('.',',')+(p>1?' points':' point')}
+function lab(parent,title,text){var p=el('p');p.appendChild(el('span','lab',title));p.appendChild(document.createTextNode(text));parent.appendChild(p)}
+function lessonText(l){return '« '+l.title+' » · '+l.author+', '+l.book+' · reçue le '+l.when}
+function expected(q){
+  if(q.type==='mcq')return q.answer+'. '+q.options[L.indexOf(q.answer)];
+  if(q.type==='multi')return q.answer.map(function(a){return a+'. '+q.options[L.indexOf(a)]}).join('  ·  ');
+  if(q.type==='truefalse')return q.answer?'Vrai':'Faux';
+  return q.answer}
+function start(){
+  app.innerHTML='';var c=el('div','card');c.appendChild(el('p','k','Contrôle hebdomadaire'));c.appendChild(el('h1',null,QUIZ.title));
+  c.appendChild(el('p',null,Q.length+' questions sur les '+QUIZ.lessons+' leçons de la semaine. Note sur '+QUIZ.total+'.'));
+  c.appendChild(el('p','s','Réponds de mémoire, sans rouvrir les leçons. Chaque réponse est corrigée tout de suite : juste ou faux, la bonne réponse, et pourquoi.'));
+  var b=el('button','go','Commencer');b.onclick=next;c.appendChild(b);app.appendChild(c)}
+function next(){i++;if(i>=Q.length)return end();show(Q[i])}
+function show(q){
+  app.innerHTML='';window.scrollTo(0,0);var c=el('div','card');
+  var bar=el('div','bar'),f=el('i');f.style.width=(100*i/Q.length)+'%';bar.appendChild(f);c.appendChild(bar);
+  c.appendChild(el('p','k','Question '+(i+1)+' sur '+Q.length+' · '+TYPE[q.type]+' · '+pts(q.points)));
+  c.appendChild(el('p','q',q.question));
+  var box=el('div');c.appendChild(box);var go=el('button','go','Valider');go.disabled=true;var picked=[];
+  if(q.type==='open'){
+    var ta=el('textarea');ta.placeholder='Écris ta réponse en une ou deux phrases, puis compare.';box.appendChild(ta);
+    go.textContent='Voir la réponse';go.disabled=false;
+    go.onclick=function(){ta.disabled=true;go.remove();openFb(c,q,ta.value)};
+  }else{
+    var opts=q.type==='truefalse'?['Vrai','Faux']:q.options;
+    opts.forEach(function(o,k){
+      var key=q.type==='truefalse'?(k===0):L[k];var b=el('button','opt');
+      if(q.type!=='truefalse'){b.appendChild(el('b',null,L[k]+'.'))}b.appendChild(document.createTextNode(o));b.dataset.k=''+key;
+      b.onclick=function(){
+        if(q.type==='multi'){var p=picked.indexOf(key);if(p<0)picked.push(key);else picked.splice(p,1);b.classList.toggle('sel')}
+        else{picked=[key];[].forEach.call(box.children,function(x){x.classList.remove('sel')});b.classList.add('sel')}
+        go.disabled=picked.length===0};
+      box.appendChild(b)});
+    go.onclick=function(){
+      var good=q.type==='multi'?q.answer:[q.answer];
+      var ok=picked.length===good.length&&picked.every(function(p){return good.indexOf(p)>=0});
+      [].forEach.call(box.children,function(x){x.disabled=true;var k=q.type==='truefalse'?(x.dataset.k==='true'):x.dataset.k;
+        if(good.indexOf(k)>=0)x.classList.add('good');else if(picked.indexOf(k)>=0)x.classList.add('bad')});
+      go.remove();
+      var given=q.type==='truefalse'?(picked[0]?'Vrai':'Faux'):picked.slice().sort().join(', ');
+      feedback(c,q,ok?q.points:0,given)}}
+  c.appendChild(go);app.appendChild(c)}
+function openFb(c,q,given){
+  var fb=el('div','fb mid');fb.appendChild(el('h3',null,'Compare avec la réponse attendue'));
+  lab(fb,'Réponse attendue',q.answer);lab(fb,'Pourquoi',q.explanation);c.appendChild(fb);
+  c.appendChild(el('p','s','Sois honnête avec toi-même : ta réponse contenait-elle l\'idée ?'));
+  var row=el('div','row');[['Oui, tout',1],['En partie',.5],['Non',0]].forEach(function(o){
+    var b=el('button',null,o[0]);b.onclick=function(){row.remove();log.push({q:q,got:q.points*o[1],given:given||'(vide)'});nextBtn(c,q,o[1]<1)};row.appendChild(b)});
+  c.appendChild(row);row.scrollIntoView({behavior:'smooth',block:'center'})}
+function feedback(c,q,got,given){
+  log.push({q:q,got:got,given:given});var ok=got>=q.points;
+  var fb=el('div','fb '+(ok?'ok':'ko'));fb.appendChild(el('h3',null,ok?'Juste · +'+pts(q.points):'Faux · 0 point'));
+  if(!ok)lab(fb,'Bonne réponse',expected(q));lab(fb,'Pourquoi',q.explanation);
+  c.appendChild(fb);nextBtn(c,q,!ok);fb.scrollIntoView({behavior:'smooth',block:'center'})}
+function nextBtn(c,q,showLesson){
+  if(showLesson){var p=el('p','s');p.appendChild(el('span','lab','À relire'));p.appendChild(document.createTextNode(q.lessons.map(lessonText).join('  |  ')));c.appendChild(p)}
+  var b=el('button','go',i+1<Q.length?'Question suivante':'Voir ma note');b.onclick=next;c.appendChild(b)}
+function end(){
+  app.innerHTML='';window.scrollTo(0,0);var c=el('div','card');
+  var total=log.reduce(function(s,r){return s+r.got},0);total=Math.round(total*2)/2;
+  var right=log.filter(function(r){return r.got>=r.q.points}).length,missed=log.filter(function(r){return r.got<r.q.points});
+  c.appendChild(el('p','k','Ta note de la semaine'));var s=el('p','score',(''+total).replace('.',','));s.appendChild(el('small',null,' / '+QUIZ.total));c.appendChild(s);
+  c.appendChild(el('p',null,right+' réponses justes sur '+Q.length+'.'+(missed.length?'':' Rien à revoir cette semaine.')));
+  if(missed.length){
+    var seen={},ul=el('ul');missed.forEach(function(r){r.q.lessons.forEach(function(l){if(!seen[l.title]){seen[l.title]=1;ul.appendChild(el('li',null,lessonText(l)))}})});
+    c.appendChild(el('p','k','À revoir'));c.appendChild(ul);
+    c.appendChild(el('p','k','Ce que tu as manqué'));
+    missed.forEach(function(r){var d=el('div','miss'+(r.got>0?' mid':''));d.appendChild(el('p',null,'Question '+r.q.n+' · '+r.q.question));
+      lab(d,'Ta réponse',r.given);lab(d,'Ce qu\'il fallait répondre',expected(r.q));lab(d,'Pourquoi',r.q.explanation);c.appendChild(d)})}
+  try{localStorage.setItem('quiz_'+QUIZ.week,JSON.stringify({score:total,date:new Date().toISOString()}))}catch(e){}
+  var b=el('button','go','Recommencer');b.onclick=function(){i=-1;log=[];start()};c.appendChild(b);app.appendChild(c)}
+start();
+})();
+</script></body></html>
