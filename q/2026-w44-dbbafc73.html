@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Contrôle de la semaine · 26/10 au 1/11</title>
+<style>
+:root{--bg:#f4f1ea;--card:#fff;--ink:#1c1c1c;--mut:#6b6b6b;--line:#ddd8cc;--gold:#b8901c;--ok:#1f6f54;--okbg:#e6f3ee;--ko:#a12a2a;--kobg:#f8e9e9;--mid:#8a5a00;--midbg:#f8f0df}
+@media(prefers-color-scheme:dark){:root{--bg:#141412;--card:#1e1e1b;--ink:#ecebe6;--mut:#a3a199;--line:#3a3934;--gold:#d8b24a;--ok:#6fd0ab;--okbg:#173229;--ko:#f09a9a;--kobg:#3a1d1d;--mid:#e3bd6c;--midbg:#3a2f17}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 Georgia,'Times New Roman',serif}
+main{max-width:680px;margin:0 auto;padding:20px 16px 60px}
+.card{background:var(--card);border-radius:14px;padding:22px 20px;border:1px solid var(--line)}
+.k{font:600 12px Arial,sans-serif;letter-spacing:1.1px;text-transform:uppercase;color:var(--gold);margin:0 0 8px}
+h1{font-size:26px;line-height:1.2;margin:0 0 10px}.q{font-size:19px;margin:0 0 18px;white-space:pre-line}
+.s{font:14px/1.5 Arial,sans-serif;color:var(--mut)}
+.bar{height:6px;background:var(--line);border-radius:3px;margin:0 0 18px;overflow:hidden}.bar i{display:block;height:100%;background:var(--gold)}
+button{font:600 16px Arial,sans-serif;border-radius:10px;cursor:pointer}
+.opt{display:block;width:100%;text-align:left;background:var(--card);color:var(--ink);border:1.5px solid var(--line);padding:13px 14px;margin:0 0 10px;font-weight:400;font-family:Georgia,serif;font-size:16.5px;line-height:1.4}
+.opt b{font-family:Arial,sans-serif;margin-right:8px}.opt.sel{border-color:var(--gold);box-shadow:inset 0 0 0 1px var(--gold)}
+.opt.good{border-color:var(--ok);background:var(--okbg)}.opt.bad{border-color:var(--ko);background:var(--kobg)}
+.go{background:var(--ink);color:var(--bg);border:0;padding:14px 20px;width:100%;margin-top:6px}.go:disabled{opacity:.35;cursor:default}
+textarea{width:100%;min-height:110px;font:16px/1.45 Georgia,serif;padding:12px;border-radius:10px;border:1.5px solid var(--line);background:var(--card);color:var(--ink)}
+.fb{border-radius:12px;padding:14px 16px;margin:16px 0 4px}.fb.ok{background:var(--okbg)}.fb.ko{background:var(--kobg)}.fb.mid{background:var(--midbg)}
+.fb h3{font:700 16px Arial,sans-serif;margin:0 0 8px}.fb.ok h3{color:var(--ok)}.fb.ko h3{color:var(--ko)}.fb.mid h3{color:var(--mid)}
+.fb p{margin:0 0 8px;font-size:16px}.fb p:last-child{margin:0}.lab{font:700 12.5px Arial,sans-serif;text-transform:uppercase;letter-spacing:.5px;color:var(--mut);display:block;margin-bottom:2px}
+.row{display:flex;gap:8px;flex-wrap:wrap}.row button{flex:1;min-width:120px;padding:12px;border:1.5px solid var(--line);background:var(--card);color:var(--ink)}
+.score{font:700 64px Georgia,serif;margin:6px 0 0}.score small{font-size:26px;color:var(--mut)}
+.miss{border-left:3px solid var(--ko);padding:2px 0 2px 14px;margin:18px 0}.miss.mid{border-color:var(--mid)}
+ul{padding-left:20px;margin:8px 0}li{margin-bottom:6px}
+</style></head><body><main id="app"></main>
+<script>const QUIZ = {"week": "2026-W44", "title": "Semaine du 26/10 au 1/11", "total": 20, "lessons": 5, "questions": [{"n": 1, "type": "mcq", "question": "In the Deutsch and Gerard line-estimate experiment, how did the students who wrote their estimate on a Magic Writing Pad and erased it before anyone saw it behave when shown evidence they were wrong?", "options": ["They revised as readily as the students who only kept the figure in their heads.", "They resisted noticeably more than the no-commitment group, but less than the group who signed and handed in their estimate.", "They were as unyielding as the group who signed and handed in their estimate.", "They revised more readily than the no-commitment group, because erasing made the figure feel less binding."], "answer": "B", "explanation": "Cialdini reports a gradient: no commitment changed most readily, the private (erased) commitment resisted noticeably more, and the public one was by far the most unyielding. The tempting answer A ignores that even an unseen written commitment already has a grip.", "points": 1.5, "lessons": [{"title": "The public eye: why a visible stand is the hardest one to abandon", "author": "Robert Cialdini", "book": "Influence", "when": "29/10 au matin"}]}, {"n": 2, "type": "truefalse", "question": "In the jury study Cialdini cites, deadlock was more common when jurors used a secret ballot than when they voted by a show of hands.", "options": [], "answer": false, "explanation": "It is the opposite: a show of hands produced significantly more deadlock, because public positions are harder to abandon even when accuracy matters. That is why his advice to a foreperson is to choose the secret ballot.", "points": 1.5, "lessons": [{"title": "The public eye: why a visible stand is the hardest one to abandon", "author": "Robert Cialdini", "book": "Influence", "when": "29/10 au matin"}]}, {"n": 3, "type": "multi", "question": "Which of these does Ross say about working with partners who have an audience that already trusts them?", "options": ["Buying their list is the weakest way of working with them.", "A disclosed pay-for-performance deal, paid per lead or as a share of revenue, is the best.", "The best partners are bloggers or companies with a large email audience whose interests and values match yours.", "The payment arrangement should stay undisclosed so the audience's trust is not disturbed.", "Putting an offer on their site or in their newsletter is the weakest option, below buying their list."], "answer": ["A", "B", "C"], "explanation": "Ross ranks: buying a list is weakest, a compelling offer on their site or newsletter is better, and a disclosed pay-for-performance deal is best. Disclosure is part of the model, and an offer on their site ranks above, not below, buying a list.", "points": 2.0, "lessons": [{"title": "Three inbound channels and what each one is really good for", "author": "Aaron Ross & Marylou Tyler", "book": "Predictable Revenue", "when": "29/10 au soir"}]}, {"n": 4, "type": "mcq", "question": "According to Ross, what is the main reason Marketo's blog drove its early growth?", "options": ["It was packed with product pitches aimed at the awareness stage.", "It carried no product pitch, shared marketing practices and hosted outside experts, which made the company a trusted authority.", "It was mostly a vehicle to rank on social media sites.", "It collected the contact details of visitors at the awareness stage."], "answer": "B", "explanation": "Ross underlines that the blog worked because it did not sell: it shared practices and invited experts. At the awareness stage the visitor is usually anonymous, so collecting contacts was not the point, and he sees social media as a support, not the engine.", "points": 1.5, "lessons": [{"title": "Three inbound channels and what each one is really good for", "author": "Aaron Ross & Marylou Tyler", "book": "Predictable Revenue", "when": "29/10 au soir"}]}, {"n": 5, "type": "mcq", "question": "In Masterson's definition, what is the allowable acquisition cost?", "options": ["The price of the front-end product minus its cost of goods.", "Average lifetime spending of a customer, minus cost of goods, minus a share of overhead, minus the profit you want.", "The amount competitors spend to win a first-time buyer.", "Twice the cost of the product, as in the restaurant's regular prices."], "answer": "B", "explanation": "It is what remains of a customer's average lifetime spending after goods, overhead share and desired profit: the amount you may lose on the first sale. It is built on lifetime value, not on the first sale's margin.", "points": 1.5, "lessons": [{"title": "Pricing the first sale below cost, on purpose", "author": "Michael Masterson", "book": "Ready, Fire, Aim", "when": "30/10 au soir"}]}, {"n": 6, "type": "truefalse", "question": "Masterson presents Nickel Beer Night as a success of deep discounting that brought loyal customers back at regular prices.", "options": [], "answer": false, "explanation": "It is his warning case: the discount was too deep, drew rowdies who fought and wrecked the place, and they never came back at regular prices. The steak night is the example that worked.", "points": 1.5, "lessons": [{"title": "Pricing the first sale below cost, on purpose", "author": "Michael Masterson", "book": "Ready, Fire, Aim", "when": "30/10 au soir"}]}, {"n": 7, "type": "mcq", "question": "When should the warmth enter your voice on a phone call, according to Lowndes?", "options": ["Before you pick up, by smiling, ideally in front of a mirror.", "From the first word, so every caller feels welcome.", "Once you know who is calling, after a neutral professional greeting.", "Only at the end of the call, as a closing flourish."], "answer": "C", "explanation": "Lowndes rejects the smile-before-answering advice because it makes you sound thrilled by any call from anybody. Warmth released after the caller is identified feels like a reaction to them, which is what the trade-association example shows.", "points": 1.5, "lessons": [{"title": "On the phone, everything your body says has to become sound", "author": "Leil Lowndes", "book": "How to Talk to Anyone", "when": "31/10 au matin"}]}, {"n": 8, "type": "multi", "question": "Which of these belong to Lowndes's Talking Gestures?", "options": ["Turn nodding into spoken phrases such as \"I see\" or \"Tell me more\".", "Raise the energy of the whole performance by about 30 percent.", "Use the Name Shower, because the physical distance is what makes the repetition acceptable.", "Use the Name Shower in person too, since hearing one's name grabs attention anywhere.", "Smile before you answer so the smile is carried in your voice."], "answer": ["A", "B", "C"], "explanation": "Nods become words, and the energy goes up 30 percent. The Name Shower works on the phone only because of the distance; face to face, the same repetition sounds manipulative. The pre-answer smile is the advice she rejects.", "points": 2.0, "lessons": [{"title": "On the phone, everything your body says has to become sound", "author": "Leil Lowndes", "book": "How to Talk to Anyone", "when": "31/10 au matin"}]}, {"n": 9, "type": "mcq", "question": "How was the i-mode handset priced relative to its alternatives?", "options": ["About 25 percent more than an ordinary cell phone, and far less than the PC or laptop needed to get online.", "At the same price as an ordinary cell phone, to win on volume.", "Below an ordinary cell phone, with losses recovered through data fees.", "About the price of a laptop, because it replaced it."], "answer": "A", "explanation": "Step 6 of the path is to price against the alternative, not the neighbour: slightly above a cell phone, far below the PC. The tempting answers import a loss-leader logic that Kim and Mauborgne do not describe for i-mode.", "points": 1.5, "lessons": [{"title": "Path 1: build a new market by looking across alternative industries", "author": "W. Chan Kim & Renee Mauborgne", "book": "Blue Ocean Strategy", "when": "31/10 au soir"}]}, {"n": 10, "type": "truefalse", "question": "To create i-mode, NTT DoCoMo first had to invent a new technology.", "options": [], "answer": false, "explanation": "The authors stress that no new technology was invented. The gain came from keeping the decisive advantages of the phone and the internet and removing the rest, such as one button to preselected sites and billing on the monthly phone bill.", "points": 1.5, "lessons": [{"title": "Path 1: build a new market by looking across alternative industries", "author": "W. Chan Kim & Renee Mauborgne", "book": "Blue Ocean Strategy", "when": "31/10 au soir"}]}, {"n": 11, "type": "mcq", "question": "A prospect who ignores your voicemails and emails finally replies to your LinkedIn message and agrees to a call. Using Ross and Lowndes, which plan is most consistent with both?", "options": ["Treat social media as the main channel and keep the call short, since the contact is already warm.", "Use LinkedIn only as a door to a hard-to-reach prospect, then on the call answer neutrally, voice your nods and reactions out loud, and warm up once you know who is on the line.", "Smile broadly before dialing, since the prospect has already shown interest.", "Stay silent while they talk so as not to interrupt, because nothing visual is lost on a phone."], "answer": "B", "explanation": "Ross sees social media as a support and as a way to reach someone who ignores voicemail and email; the call is where Lowndes applies. Silence is not neutral on a phone: a nod that is not heard is a silence, so reactions have to be spoken.", "points": 2.0, "lessons": [{"title": "Three inbound channels and what each one is really good for", "author": "Aaron Ross & Marylou Tyler", "book": "Predictable Revenue", "when": "29/10 au soir"}, {"title": "On the phone, everything your body says has to become sound", "author": "Leil Lowndes", "book": "How to Talk to Anyone", "when": "31/10 au matin"}]}, {"n": 12, "type": "open", "question": "Masterson's front-end pricing and Kim and Mauborgne's i-mode pricing both set a price relative to something. Against what does each set it, and what limit does each imply?", "options": [], "answer": "Masterson prices the front-end product against the market, below it and even below cost, to win new customers; the limit is the allowable acquisition cost (and avoiding a discount so deep it draws bargain hunters). Kim and Mauborgne price against the alternative industry (the PC), slightly above a cell phone and far below a laptop, and the limit is that the offer keeps only the decisive advantages and eliminates the rest.", "explanation": "Both avoid pricing off direct rivals' habits, but for different reasons: Masterson accepts a controlled loss on the first sale to buy a customer, within a number he calculates; Kim and Mauborgne make the offer worth its price by comparison with the alternative buyers would otherwise choose.", "points": 2.0, "lessons": [{"title": "Pricing the first sale below cost, on purpose", "author": "Michael Masterson", "book": "Ready, Fire, Aim", "when": "30/10 au soir"}, {"title": "Path 1: build a new market by looking across alternative industries", "author": "W. Chan Kim & Renee Mauborgne", "book": "Blue Ocean Strategy", "when": "31/10 au soir"}]}]};</script>
+<script>
+(function(){
+var app=document.getElementById('app'),Q=QUIZ.questions,i=-1,log=[];
+var L='ABCDEFGH',TYPE={mcq:'Une seule bonne réponse',multi:'Plusieurs bonnes réponses',truefalse:'Vrai ou faux',open:'Réponse libre'};
+function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
+function pts(p){return (''+p).replace('.',',')+(p>1?' points':' point')}
+function lab(parent,title,text){var p=el('p');p.appendChild(el('span','lab',title));p.appendChild(document.createTextNode(text));parent.appendChild(p)}
+function lessonText(l){return '« '+l.title+' » · '+l.author+', '+l.book+' · reçue le '+l.when}
+function expected(q){
+  if(q.type==='mcq')return q.answer+'. '+q.options[L.indexOf(q.answer)];
+  if(q.type==='multi')return q.answer.map(function(a){return a+'. '+q.options[L.indexOf(a)]}).join('  ·  ');
+  if(q.type==='truefalse')return q.answer?'Vrai':'Faux';
+  return q.answer}
+function start(){
+  app.innerHTML='';var c=el('div','card');c.appendChild(el('p','k','Contrôle hebdomadaire'));c.appendChild(el('h1',null,QUIZ.title));
+  c.appendChild(el('p',null,Q.length+' questions sur les '+QUIZ.lessons+' leçons de la semaine. Note sur '+QUIZ.total+'.'));
+  c.appendChild(el('p','s','Réponds de mémoire, sans rouvrir les leçons. Chaque réponse est corrigée tout de suite : juste ou faux, la bonne réponse, et pourquoi.'));
+  var b=el('button','go','Commencer');b.onclick=next;c.appendChild(b);app.appendChild(c)}
+function next(){i++;if(i>=Q.length)return end();show(Q[i])}
+function show(q){
+  app.innerHTML='';window.scrollTo(0,0);var c=el('div','card');
+  var bar=el('div','bar'),f=el('i');f.style.width=(100*i/Q.length)+'%';bar.appendChild(f);c.appendChild(bar);
+  c.appendChild(el('p','k','Question '+(i+1)+' sur '+Q.length+' · '+TYPE[q.type]+' · '+pts(q.points)));
+  c.appendChild(el('p','q',q.question));
+  var box=el('div');c.appendChild(box);var go=el('button','go','Valider');go.disabled=true;var picked=[];
+  if(q.type==='open'){
+    var ta=el('textarea');ta.placeholder='Écris ta réponse en une ou deux phrases, puis compare.';box.appendChild(ta);
+    go.textContent='Voir la réponse';go.disabled=false;
+    go.onclick=function(){ta.disabled=true;go.remove();openFb(c,q,ta.value)};
+  }else{
+    var opts=q.type==='truefalse'?['Vrai','Faux']:q.options;
+    opts.forEach(function(o,k){
+      var key=q.type==='truefalse'?(k===0):L[k];var b=el('button','opt');
+      if(q.type!=='truefalse'){b.appendChild(el('b',null,L[k]+'.'))}b.appendChild(document.createTextNode(o));b.dataset.k=''+key;
+      b.onclick=function(){
+        if(q.type==='multi'){var p=picked.indexOf(key);if(p<0)picked.push(key);else picked.splice(p,1);b.classList.toggle('sel')}
+        else{picked=[key];[].forEach.call(box.children,function(x){x.classList.remove('sel')});b.classList.add('sel')}
+        go.disabled=picked.length===0};
+      box.appendChild(b)});
+    go.onclick=function(){
+      var good=q.type==='multi'?q.answer:[q.answer];
+      var ok=picked.length===good.length&&picked.every(function(p){return good.indexOf(p)>=0});
+      [].forEach.call(box.children,function(x){x.disabled=true;var k=q.type==='truefalse'?(x.dataset.k==='true'):x.dataset.k;
+        if(good.indexOf(k)>=0)x.classList.add('good');else if(picked.indexOf(k)>=0)x.classList.add('bad')});
+      go.remove();
+      var given=q.type==='truefalse'?(picked[0]?'Vrai':'Faux'):picked.slice().sort().join(', ');
+      feedback(c,q,ok?q.points:0,given)}}
+  c.appendChild(go);app.appendChild(c)}
+function openFb(c,q,given){
+  var fb=el('div','fb mid');fb.appendChild(el('h3',null,'Compare avec la réponse attendue'));
+  lab(fb,'Réponse attendue',q.answer);lab(fb,'Pourquoi',q.explanation);c.appendChild(fb);
+  c.appendChild(el('p','s','Sois honnête avec toi-même : ta réponse contenait-elle l\'idée ?'));
+  var row=el('div','row');[['Oui, tout',1],['En partie',.5],['Non',0]].forEach(function(o){
+    var b=el('button',null,o[0]);b.onclick=function(){row.remove();log.push({q:q,got:q.points*o[1],given:given||'(vide)'});nextBtn(c,q,o[1]<1)};row.appendChild(b)});
+  c.appendChild(row);row.scrollIntoView({behavior:'smooth',block:'center'})}
+function feedback(c,q,got,given){
+  log.push({q:q,got:got,given:given});var ok=got>=q.points;
+  var fb=el('div','fb '+(ok?'ok':'ko'));fb.appendChild(el('h3',null,ok?'Juste · +'+pts(q.points):'Faux · 0 point'));
+  if(!ok)lab(fb,'Bonne réponse',expected(q));lab(fb,'Pourquoi',q.explanation);
+  c.appendChild(fb);nextBtn(c,q,!ok);fb.scrollIntoView({behavior:'smooth',block:'center'})}
+function nextBtn(c,q,showLesson){
+  if(showLesson){var p=el('p','s');p.appendChild(el('span','lab','À relire'));p.appendChild(document.createTextNode(q.lessons.map(lessonText).join('  |  ')));c.appendChild(p)}
+  var b=el('button','go',i+1<Q.length?'Question suivante':'Voir ma note');b.onclick=next;c.appendChild(b)}
+function end(){
+  app.innerHTML='';window.scrollTo(0,0);var c=el('div','card');
+  var total=log.reduce(function(s,r){return s+r.got},0);total=Math.round(total*2)/2;
+  var right=log.filter(function(r){return r.got>=r.q.points}).length,missed=log.filter(function(r){return r.got<r.q.points});
+  c.appendChild(el('p','k','Ta note de la semaine'));var s=el('p','score',(''+total).replace('.',','));s.appendChild(el('small',null,' / '+QUIZ.total));c.appendChild(s);
+  c.appendChild(el('p',null,right+' réponses justes sur '+Q.length+'.'+(missed.length?'':' Rien à revoir cette semaine.')));
+  if(missed.length){
+    var seen={},ul=el('ul');missed.forEach(function(r){r.q.lessons.forEach(function(l){if(!seen[l.title]){seen[l.title]=1;ul.appendChild(el('li',null,lessonText(l)))}})});
+    c.appendChild(el('p','k','À revoir'));c.appendChild(ul);
+    c.appendChild(el('p','k','Ce que tu as manqué'));
+    missed.forEach(function(r){var d=el('div','miss'+(r.got>0?' mid':''));d.appendChild(el('p',null,'Question '+r.q.n+' · '+r.q.question));
+      lab(d,'Ta réponse',r.given);lab(d,'Ce qu\'il fallait répondre',expected(r.q));lab(d,'Pourquoi',r.q.explanation);c.appendChild(d)})}
+  try{localStorage.setItem('quiz_'+QUIZ.week,JSON.stringify({score:total,date:new Date().toISOString()}))}catch(e){}
+  var b=el('button','go','Recommencer');b.onclick=function(){i=-1;log=[];start()};c.appendChild(b);app.appendChild(c)}
+start();
+})();
+</script></body></html>
